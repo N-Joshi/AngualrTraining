@@ -13,7 +13,8 @@ export class TaskManagerComponent implements OnInit {
   salary=88;
 //  myDate = Date.now();
   myDate=new Date()
-  name='naman'
+  name=["Ram","Sham","Tanu","Kanu"]
+  score = [25,35,44,34,12,1,24,76]
   constructor() { }
   
   ngOnInit() {

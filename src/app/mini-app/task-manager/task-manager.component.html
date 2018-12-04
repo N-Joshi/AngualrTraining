@@ -25,4 +25,8 @@ Date  : {{ myDate }}
 <br>
 Date Pipe : {{myDate | date:'MM/dd/yy'}}
 <br>
-String Sort Pipe: {{name | stringSortPipe}}
+Unsorted Friends Pipe: {{name }}
+<br>
+Sorted Friends Pipe: {{name | stringSortPipe:'dsc'}}
+<br>
+Unsorted Number Pipe:{{score | numberSortPipe}}

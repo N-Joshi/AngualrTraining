@@ -6,7 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class StringSortPipePipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    return value + ' is a good boy';
+    if (args == 'dsc') {
+      return value.sort().reverse();
+    }
+    else if (args == 'asc') {
+      return value.sort();
+    }
+    return value.sort();
   }
-
 }

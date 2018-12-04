@@ -10,6 +10,9 @@ import { MotherComponent } from './family/mother/mother.component';
 import { TaskManagerComponent } from './mini-app/task-manager/task-manager.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { StringSortPipePipe } from './myPipes/string-sort-pipe.pipe';
+import { NumberSortPipePipe } from './myPipes/number-sort-pipe.pipe';
+import { ConsumeLocalService1Component } from './consumeService/consume-local-service1/consume-local-service1.component';
+import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,13 @@ import { StringSortPipePipe } from './myPipes/string-sort-pipe.pipe';
     MotherComponent,
     TaskManagerComponent,
     NotFoundComponent,
-    StringSortPipePipe
+    StringSortPipePipe,
+   
+    NumberSortPipePipe,
+   
+    ConsumeLocalService1Component,
+   
+    ConsumeLocalService2Component
   ],
   imports: [
     BrowserModule,
