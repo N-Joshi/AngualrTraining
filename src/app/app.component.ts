@@ -3,8 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  //template:"<h1>MY Inline Template</h1>",
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-app';
+  title = 'Cognizant'
+  score=88
+  
 }

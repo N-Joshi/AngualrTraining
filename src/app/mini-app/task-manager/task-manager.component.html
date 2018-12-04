@@ -1,0 +1,19 @@
+<br><br>Task:
+<input type="text" [(ngModel)]='addTask' placeholder="Add your Task">
+<button (click)="SayHello()">Add Task</button>
+<br>
+<ol>
+  <li *ngFor="let t of myTask; let currentTask = index">
+    {{t}} &nbsp;
+    <button (click)="taskDone(currentTask)">Done</button>
+    <br><br>
+   </li>
+</ol>
+
+<h3>My Completed Task List:</h3>
+<ol>
+  <li *ngFor="let m of myCompletedTask">
+    {{m}} &nbsp;
+    <br><br>
+  </li>
+</ol>
