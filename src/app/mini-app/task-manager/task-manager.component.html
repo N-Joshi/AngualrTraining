@@ -2,9 +2,10 @@
 <input type="text" [(ngModel)]='addTask' placeholder="Add your Task">
 <button (click)="SayHello()">Add Task</button>
 <br>
+<h3>Pending</h3>
 <ol>
   <li *ngFor="let t of myTask; let currentTask = index">
-    {{t}} &nbsp;
+    {{t | lowercase}} &nbsp;
     <button (click)="taskDone(currentTask)">Done</button>
     <br><br>
    </li>
@@ -17,3 +18,11 @@
     <br><br>
   </li>
 </ol>
+<hr>
+Currency  Pipe  :  {{salary | currency:''}}
+<br>
+Date  : {{ myDate }}
+<br>
+Date Pipe : {{myDate | date:'MM/dd/yy'}}
+<br>
+String Sort Pipe: {{name | stringSortPipe}}
