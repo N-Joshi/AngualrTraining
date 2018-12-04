@@ -10,22 +10,22 @@ export class TaskManagerComponent implements OnInit {
   counter = 0;
   myTask = ['Go and get Mango Lassi', 'Plan the weekend', 'Identified Something', 'Somemore Task']
   myCompletedTask = [];
-
+  
   constructor() { }
-
+  
   ngOnInit() {
   }
 
   SayHello = function () {
 
     this.myTask.push(this.addTask)
-    this.addTask = ""
+    this.addTask=""
   }
 
-  taskDone(i) {
+  taskDone(i){
     console.log(i);
     this.myCompletedTask.push(this.myTask[i])
-
+    this.myTask.splice(i,1)
   }
 
 }
