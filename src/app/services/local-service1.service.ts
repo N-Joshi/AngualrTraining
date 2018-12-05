@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class LocalService1Service {
 
+  
+
   friends = ['ola','uber','zap'];
 
   sayHelloService(){

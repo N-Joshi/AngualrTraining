@@ -1,3 +1,4 @@
+import { UserApiComponentComponent } from './remote/user-api-component/user-api-component.component';
 import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -35,6 +36,10 @@ const myroutes: Routes = [
   {
     path:'service2',
     component:ConsumeLocalService2Component
+  },
+   {
+    path:'remote',
+    component:UserApiComponentComponent
   },
   {
     path: '**',

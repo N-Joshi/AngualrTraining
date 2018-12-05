@@ -1,0 +1,37 @@
+<head>
+  <style>
+table, th, td {
+    border: 1px solid yellowgreen;
+    text-align: center;
+    color: darkturquoise
+   
+}
+</style>
+</head>
+
+Search : <input type="text" [(ngModel)]="searchString" autofocus>&nbsp;{{searchString}}
+<br>
+<br>
+<br>
+
+<table style="width:100%">
+<thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr *ngFor="let t of allUser | autoSearchPipe:searchString">
+    <td >{{t.id}}</td>
+    <td>{{t.name}}</td>
+    <td>{{t.email}}</td>
+    <button (click)="Delete(t.id)">Delete</button>
+  </tr>
+</tbody>
+</table>
+<br>
+<br>
+<button (click)="postUser()">Create</button>

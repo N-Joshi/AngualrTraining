@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +16,9 @@ import { StringSortPipePipe } from './myPipes/string-sort-pipe.pipe';
 import { NumberSortPipePipe } from './myPipes/number-sort-pipe.pipe';
 import { ConsumeLocalService1Component } from './consumeService/consume-local-service1/consume-local-service1.component';
 import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
+import { RemoteDataComponent } from './remote/remote-data/remote-data.component';
+import { UserApiComponentComponent } from './remote/user-api-component/user-api-component.component';
+import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -23,17 +29,18 @@ import { ConsumeLocalService2Component } from './consumeService/consume-local-se
     TaskManagerComponent,
     NotFoundComponent,
     StringSortPipePipe,
-   
     NumberSortPipePipe,
-   
     ConsumeLocalService1Component,
-   
-    ConsumeLocalService2Component
+    ConsumeLocalService2Component,
+    RemoteDataComponent,
+    UserApiComponentComponent,
+    AutoSearchPipePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
