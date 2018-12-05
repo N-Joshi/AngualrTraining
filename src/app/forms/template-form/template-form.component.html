@@ -1,0 +1,19 @@
+<form #myForm="ngForm" (ngSubmit)="submitForm(myForm.value)">
+  First Name:
+  <input type="text" placeholder="First Name" name="name" ngModel><br>
+  <br> Email:
+  <input type="email" placeholder="Email"name="email" ngModel><br>
+  <br>
+   <!-- Hobby:
+  <select name="hobby" ngModel>
+     <option> Driving</option>
+     <option> Photography</option>
+     <option> ParaGliding</option>   
+   </select>
+  <br>
+  <br>
+  Latitude : <input type="text" placeholder="Latitude" name="address.geo.lat">
+  </address>" ngModel> 
+  Longitude :--> 
+  <button type="submit">Submit</button>
+</form>

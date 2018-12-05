@@ -1,0 +1,12 @@
+<form [formGroup]="modelForm" (ngSubmit)="modelFormUser(modelForm.value)">
+
+Name: <input type="text" formControlName="name"><br><br>
+Email: <input type="text" formControlName="email"><br><br>
+Hobby: <select  formControlName="hobby" >
+        <option value="Dancing">Dancing</option>
+        <option value="Swimming">Swimming</option>
+        <option value="Photography">Photography</option>
+      </select>   
+<br><br>
+<button type="submit" [disabled]="!modelForm.valid">Add</button>
+</form>

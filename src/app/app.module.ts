@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -19,6 +20,9 @@ import { ConsumeLocalService2Component } from './consumeService/consume-local-se
 import { RemoteDataComponent } from './remote/remote-data/remote-data.component';
 import { UserApiComponentComponent } from './remote/user-api-component/user-api-component.component';
 import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
+import { UserDetailComponent } from './remote/user-detail/user-detail.component';
+import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +38,17 @@ import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
     ConsumeLocalService2Component,
     RemoteDataComponent,
     UserApiComponentComponent,
-    AutoSearchPipePipe
+    AutoSearchPipePipe,
+    UserDetailComponent,
+    TemplateFormComponent,
+    ModelFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

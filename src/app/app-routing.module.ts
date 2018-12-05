@@ -1,3 +1,6 @@
+import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
+import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { UserDetailComponent } from './remote/user-detail/user-detail.component';
 import { UserApiComponentComponent } from './remote/user-api-component/user-api-component.component';
 import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
 import { NgModule } from '@angular/core';
@@ -40,6 +43,18 @@ const myroutes: Routes = [
    {
     path:'remote',
     component:UserApiComponentComponent
+  },
+  {
+    path:"templateform",
+    component:TemplateFormComponent
+  },
+   {
+    path:'remote/:id',
+    component:UserDetailComponent
+  },
+     {
+    path:'modelform',
+    component:ModelFormsComponent
   },
   {
     path: '**',

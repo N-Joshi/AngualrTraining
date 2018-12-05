@@ -20,4 +20,8 @@ export class RestApiServiceService {
   deleteUser(id){
       return this.http.delete("http://localhost:3000/users/"+id)
   }
+
+  detailUser(id){
+    return this.http.get("http://localhost:3000/users/"+id)
+  }
 }

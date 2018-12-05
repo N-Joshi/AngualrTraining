@@ -28,7 +28,8 @@ Search : <input type="text" [(ngModel)]="searchString" autofocus>&nbsp;{{searchS
     <td >{{t.id}}</td>
     <td>{{t.name}}</td>
     <td>{{t.email}}</td>
-    <button (click)="Delete(t.id)">Delete</button>
+    <td><button (click)="Delete(t.id)">Delete</button></td>
+    <td><button (click)="ViewDetail(t.id)">View Detail</button></td>
   </tr>
 </tbody>
 </table>
