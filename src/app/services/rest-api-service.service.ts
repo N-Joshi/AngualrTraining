@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
@@ -7,21 +7,21 @@ import {HttpClient} from '@angular/common/http';
 })
 export class RestApiServiceService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getRemoteUser(){
-     return this.http.get("http://localhost:3000/users")
+  getRemoteUser() {
+    return this.http.get("http://localhost:3000/users")
   }
 
-  createUser(user){
-      return this.http.post("http://localhost:3000/users",user)
+  createUser(user) {
+    return this.http.post("http://localhost:3000/users", user)
   }
 
-  deleteUser(id){
-      return this.http.delete("http://localhost:3000/users/"+id)
+  deleteUser(id) {
+    return this.http.delete("http://localhost:3000/users/" + id)
   }
 
-  detailUser(id){
-    return this.http.get("http://localhost:3000/users/"+id)
+  detailUser(id) {
+    return this.http.get("http://localhost:3000/users/" + id)
   }
 }

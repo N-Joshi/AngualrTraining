@@ -1,3 +1,4 @@
+import { AnimationComponent } from './animation/animation/animation.component';
 import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { UserDetailComponent } from './remote/user-detail/user-detail.component';
@@ -55,6 +56,10 @@ const myroutes: Routes = [
      {
     path:'modelform',
     component:ModelFormsComponent
+  },
+  {
+    path:'animate',
+    component:AnimationComponent
   },
   {
     path: '**',

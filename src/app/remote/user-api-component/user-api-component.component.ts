@@ -12,7 +12,7 @@ export class UserApiComponentComponent implements OnInit {
   constructor(private userService: RestApiServiceService, private router: Router) { }
 
   allUser: any
-  searchString:any
+  searchString: any
 
   ngOnInit() {
     this.getApiData()
@@ -42,9 +42,7 @@ export class UserApiComponentComponent implements OnInit {
       console.log(response);
       this.userService.getRemoteUser().subscribe((data) => {
         this.allUser = data
-
       })
-      //this.allUser=response;
     })
   }
 
@@ -58,10 +56,10 @@ export class UserApiComponentComponent implements OnInit {
   }
 
   ViewDetail(id) {
-         this.router.navigate(["/remote", id])
-    }
-    
-  
-
+    this.router.navigate(["/remote", id])
   }
+
+
+
+}
 

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +23,7 @@ import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
 import { UserDetailComponent } from './remote/user-detail/user-detail.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
+import { AnimationComponent } from './animation/animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -41,14 +42,16 @@ import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
     AutoSearchPipePipe,
     UserDetailComponent,
     TemplateFormComponent,
-    ModelFormsComponent
+    ModelFormsComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
