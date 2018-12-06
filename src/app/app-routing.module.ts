@@ -1,3 +1,4 @@
+import { EcomcompComponent } from './ecom/ecomcomp/ecomcomp.component';
 import { LandingpageComponent } from './landing/landingpage/landingpage.component';
 import { AnimationComponent } from './animation/animation/animation.component';
 import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
@@ -65,6 +66,10 @@ const myroutes: Routes = [
   {
     path:'landing',
     component:LandingpageComponent
+  },
+    {
+    path:'ecom',
+    component:EcomcompComponent
   },
   {
     path: '**',

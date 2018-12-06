@@ -24,4 +24,8 @@ export class RestApiServiceService {
   detailUser(id) {
     return this.http.get("http://localhost:3000/users/" + id)
   }
+
+  getProduct(){
+    return this.http.get("http://localhost:3000/ecom/")
+  }
 }

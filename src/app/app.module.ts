@@ -25,6 +25,7 @@ import { TemplateFormComponent } from './forms/template-form/template-form.compo
 import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
 import { AnimationComponent } from './animation/animation/animation.component';
 import { LandingpageComponent } from './landing/landingpage/landingpage.component';
+import { EcomcompComponent } from './ecom/ecomcomp/ecomcomp.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { LandingpageComponent } from './landing/landingpage/landingpage.componen
     TemplateFormComponent,
     ModelFormsComponent,
     AnimationComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    EcomcompComponent
   ],
   imports: [
     BrowserModule,
