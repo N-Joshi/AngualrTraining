@@ -1,15 +1,50 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<a routerLink="/family" >Home</a>&nbsp;
+<html>
 
-<a routerLink="/task" >Task</a>&nbsp;
-<a routerLink="/local" >LocalService1</a>&nbsp;
-<a routerLink="/service2" >LocalService2</a>&nbsp;
-<a routerLink="/remote" >Remote Data</a> &nbsp;
-<a routerLink="/templateform" >Template Form</a> &nbsp;
-<a routerLink="/modelform">Model Form</a>&nbsp;
-<a routerLink="/animate">Animate</a>
-<hr>
+<head>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Welcome To Art-Land</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/family">Family<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/task">Task</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/local">Service1</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/remote">Remote Data</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/templateform">Template</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/animate">Animate</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/landing">New Page</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
 <br>
 <br>
-<hr>
+<br>
 <router-outlet></router-outlet>
+</body>

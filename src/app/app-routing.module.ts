@@ -1,3 +1,4 @@
+import { LandingpageComponent } from './landing/landingpage/landingpage.component';
 import { AnimationComponent } from './animation/animation/animation.component';
 import { ModelFormsComponent } from './forms/model-forms/model-forms.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
@@ -60,6 +61,10 @@ const myroutes: Routes = [
   {
     path:'animate',
     component:AnimationComponent
+  },
+  {
+    path:'landing',
+    component:LandingpageComponent
   },
   {
     path: '**',
